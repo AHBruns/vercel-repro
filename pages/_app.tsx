@@ -1,7 +1,8 @@
 import React from "react";
+import { AppProps } from "next/app";
 import { useRouter } from "next/router";
 
-function App() {
+function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
   return (
     <div>
